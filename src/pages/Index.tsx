@@ -42,7 +42,7 @@ const Index = () => {
           <div className="w-8 h-8 rounded-lg gradient-gold flex items-center justify-center">
             <Sparkles className="w-5 h-5 text-primary-foreground" />
           </div>
-          <span className="font-display font-bold text-gold tracking-wide">PROTOCOLO</span>
+          <span className="font-display font-bold text-gold tracking-wide">FELICIDADES! SEU PLANO ESTÁ CONFIRMADO</span>
         </div>
         <span className="text-xs text-muted-foreground hidden sm:inline">Acceso exclusivo · Post-compra</span>
       </header>
