@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { SectionTitle } from "@/components/SectionTitle";
 import { ExitIntentPopupMain } from "@/components/ExitIntentPopupMain";
@@ -30,6 +30,21 @@ const scrollToOferta = () =>
 
 const Index = () => {
   const [vagas] = useState(47);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      const script = document.createElement("script");
+      script.src = "https://scripts.converteai.net/83e204fd-8645-4b2e-a2f5-f2ef3e7964f4/players/69e36810fca62391bc428a45/v4/player.js";
+      script.async = true;
+      script.onload = () => {
+        if (window.vturb) {
+          window.vturb.render();
+        }
+      };
+      document.head.appendChild(script);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground pb-28">
@@ -72,10 +87,9 @@ const Index = () => {
         <h2 className="text-center font-display text-2xl md:text-4xl font-bold text-foreground mb-6">
           Mira Cómo Funciona el <span className="text-gold">Protocolo</span> por Dentro
         </h2>
-        <div className="rounded-2xl overflow-hidden border-2 border-gold shadow-glow bg-card flex justify-center p-6">
+        <div ref={videoRef} className="rounded-2xl overflow-hidden border-2 border-gold shadow-glow bg-card flex justify-center p-6">
           <vturb-smartplayer id="vid-69e36810fca62391bc428a45" style={{display: 'block', margin: '0 auto', width: '100%', maxWidth: '600px'}}></vturb-smartplayer>
         </div>
-        <script type="text/javascript" dangerouslySetInnerHTML={{__html: `var s=document.createElement("script"); s.src="https://scripts.converteai.net/83e204fd-8645-4b2e-a2f5-f2ef3e7964f4/players/69e36810fca62391bc428a45/v4/player.js"; s.async=!0; document.head.appendChild(s);`}} />
         <p className="text-center text-muted-foreground mt-5 text-base md:text-lg">
           <Users className="inline w-5 h-5 text-success mr-2 -mt-1" />
           + 1.500 hombres ya usan nuestros scripts
