@@ -64,7 +64,7 @@ const Index = () => {
 
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed fade-in-up">
           El próximo mensaje puede cambiarlo todo, para bien o para mal. No dejes que la confusión te paralice. Tienes solo
-          <span className="text-warning font-bold"> 30 minutos </span> para asegurar tu acceso por <span className="text-gold font-bold">R$ 17</span>.
+          <span className="text-warning font-bold"> 30 minutos </span> para asegurar tu acceso.
         </p>
 
         <CountdownTimer />
