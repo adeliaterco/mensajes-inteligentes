@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { SectionTitle } from "@/components/SectionTitle";
 import { ExitIntentPopupMain } from "@/components/ExitIntentPopupMain";
@@ -56,6 +56,18 @@ const Index = () => {
       }
     };
     document.head.appendChild(hotmartScript);
+  }, []);
+
+  // ✅ NOVO: Klarity Script para rastreamento de leads
+  useEffect(() => {
+    const klarityScript = document.createElement('script');
+    klarityScript.type = 'text/javascript';
+    klarityScript.innerHTML = `(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wdpxl8yts0");`;
+    document.head.appendChild(klarityScript);
   }, []);
 
   return (
