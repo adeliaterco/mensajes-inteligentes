@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { CountdownTimer } from "@/components/CountdownTimer";
-
 import { SectionTitle } from "@/components/SectionTitle";
 import { ExitIntentPopupMain } from "@/components/ExitIntentPopupMain";
 import {
@@ -19,7 +18,6 @@ import {
   ShieldCheck,
   X,
   Lock,
-  PlayCircle,
   Sparkles,
   Users,
   FileText,
@@ -69,19 +67,15 @@ const Index = () => {
 
       </section>
 
-      {/* SECCIÓN 2 — VIDEO */}
+      {/* SECCIÓN 2 — VIDEO CON VTURB */}
       <section className="px-4 py-12 max-w-4xl mx-auto">
         <h2 className="text-center font-display text-2xl md:text-4xl font-bold text-foreground mb-6">
           Mira Cómo Funciona el <span className="text-gold">Protocolo</span> por Dentro
         </h2>
-        <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-gold shadow-glow bg-card group cursor-pointer">
-          <div className="absolute inset-0 bg-gradient-to-br from-black via-card to-black flex items-center justify-center">
-            <div className="text-center">
-              <PlayCircle className="w-24 h-24 md:w-32 md:h-32 text-gold mx-auto mb-4 group-hover:scale-110 transition-transform pulse-gold rounded-full" />
-              <span className="text-muted-foreground text-sm uppercase tracking-widest">Demo del App · 2 min</span>
-            </div>
-          </div>
+        <div className="rounded-2xl overflow-hidden border-2 border-gold shadow-glow bg-card flex justify-center p-6">
+          <vturb-smartplayer id="vid-69e36810fca62391bc428a45" style={{display: 'block', margin: '0 auto', width: '100%', maxWidth: '600px'}}></vturb-smartplayer>
         </div>
+        <script type="text/javascript" dangerouslySetInnerHTML={{__html: `var s=document.createElement("script"); s.src="https://scripts.converteai.net/83e204fd-8645-4b2e-a2f5-f2ef3e7964f4/players/69e36810fca62391bc428a45/v4/player.js"; s.async=!0; document.head.appendChild(s);`}} />
         <p className="text-center text-muted-foreground mt-5 text-base md:text-lg">
           <Users className="inline w-5 h-5 text-success mr-2 -mt-1" />
           + 1.500 hombres ya usan nuestros scripts
