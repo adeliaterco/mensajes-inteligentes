@@ -46,6 +46,18 @@ const Index = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const hotmartScript = document.createElement("script");
+    hotmartScript.src = "https://checkout.hotmart.com/lib/hotmart-checkout-elements.js";
+    hotmartScript.async = true;
+    hotmartScript.onload = () => {
+      if ((window as any).checkoutElements) {
+        (window as any).checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+      }
+    };
+    document.head.appendChild(hotmartScript);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground pb-28">
       <ExitIntentPopupMain />
@@ -224,9 +236,7 @@ const Index = () => {
         </p>
 
         <div className="mt-8 flex justify-center">
-          <button onClick={scrollToOferta} className="gradient-gold text-primary-foreground font-bold text-lg px-10 py-5 rounded-xl shadow-gold hover:scale-105 transition-transform bounce-cta">
-            ¡SÍ! QUIERO EL PROTOCOLO POR R$ 17
-          </button>
+          <div id="hotmart-sales-funnel"></div>
         </div>
       </section>
 
