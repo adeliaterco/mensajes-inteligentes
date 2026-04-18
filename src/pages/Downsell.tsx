@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -8,10 +9,23 @@ const Downsell = () => {
   const scrollToOferta = () =>
     document.getElementById("oferta-downsell")?.scrollIntoView({ behavior: "smooth" });
 
+  // ADICIONAR AQUI O useEffect PARA HOTMART:
+  useEffect(() => {
+    const hotmartScript = document.createElement("script");
+    hotmartScript.src = "https://checkout.hotmart.com/lib/hotmart-checkout-elements.js";
+    hotmartScript.async = true;
+    hotmartScript.onload = () => {
+      if ((window as any).checkoutElements) {
+        (window as any).checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel-downsell');
+      }
+    };
+    document.head.appendChild(hotmartScript);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground pb-20">
       <ExitIntentPopup onAccept={scrollToOferta} />
-      {/* HEADER */}
+      {/* HEADER - MANTER IDÊNTICO */}
       <header className="px-4 pt-6 max-w-6xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg gradient-gold flex items-center justify-center">
@@ -22,7 +36,7 @@ const Downsell = () => {
         <span className="text-xs text-muted-foreground hidden sm:inline">Última oportunidad</span>
       </header>
 
-      {/* HERO DOWNSELL */}
+      {/* HERO DOWNSELL - MANTER IDÊNTICO */}
       <section className="px-4 pt-10 md:pt-16 pb-12 max-w-4xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-warning/10 border border-warning/40 mb-6 fade-in-up">
           <Clock className="w-4 h-4 text-warning" />
@@ -49,7 +63,7 @@ const Downsell = () => {
         <CountdownTimer />
       </section>
 
-      {/* OFERTA DOWNSELL */}
+      {/* OFERTA DOWNSELL - SUBSTITUIÇÃO AQUI */}
       <section id="oferta-downsell" className="px-4 py-12 max-w-4xl mx-auto">
         <SectionTitle className="text-center mb-10">
           Última Oferta: Solo R$ 12
@@ -80,9 +94,14 @@ const Downsell = () => {
           Por menos que un café, tendrás acceso a los mismos scripts que ya ayudaron a{" "}
           <span className="text-gold font-bold">+1.500 hombres</span> a reconquistar a su ex.
         </p>
+
+        {/* REMOVER BOTÃO ANTIGO E INSERIR DIV HOTMART */}
+        <div className="mt-8 flex justify-center">
+          <div id="hotmart-sales-funnel-downsell"></div>
+        </div>
       </section>
 
-      {/* QUE INCLUYE */}
+      {/* QUE INCLUYE - MANTER IDÊNTICO */}
       <section className="px-4 py-12 max-w-4xl mx-auto">
         <SectionTitle className="text-center mb-10">
           Todo Esto Por R$ 12
@@ -109,7 +128,7 @@ const Downsell = () => {
         </div>
       </section>
 
-      {/* GARANTIA */}
+      {/* GARANTIA - MANTER IDÊNTICO */}
       <section className="px-4 py-12 max-w-3xl mx-auto">
         <div className="bg-card border-2 border-success/50 rounded-2xl p-8 text-center">
           <ShieldCheck className="w-14 h-14 text-success mx-auto mb-4" />
@@ -123,7 +142,7 @@ const Downsell = () => {
         </div>
       </section>
 
-      {/* CTA FINAL */}
+      {/* CTA FINAL - MANTER IDÊNTICO */}
       <section className="px-4 py-16 max-w-3xl mx-auto text-center">
         <Gift className="w-12 h-12 text-gold mx-auto mb-6 pulse-gold" />
         <h2 className="font-display text-3xl md:text-4xl font-black text-foreground mb-6">
