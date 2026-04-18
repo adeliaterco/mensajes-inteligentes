@@ -88,7 +88,7 @@ export const ExitIntentPopup = ({ onAccept }: ExitIntentPopupProps) => {
         <Gift className="w-14 h-14 text-gold mx-auto mb-4 pulse-gold" />
 
         <h2 className="font-display text-2xl md:text-3xl font-black text-gold leading-tight mb-3">
-          ¿Vas a renunciar a ella por R$ 12?
+          ¿Vas a renunciar a ella por $ 12?
         </h2>
 
         <p className="text-foreground text-base md:text-lg mb-2">
@@ -106,7 +106,7 @@ export const ExitIntentPopup = ({ onAccept }: ExitIntentPopupProps) => {
           }}
           className="w-full gradient-gold text-primary-foreground font-black text-base md:text-xl px-6 py-5 rounded-xl shadow-gold hover:scale-[1.02] transition-transform bounce-cta mb-4"
         >
-          ¡SÍ! QUIERO MI ÚLTIMA OPORTUNIDAD POR R$ 12
+          ¡SÍ! QUIERO MI ÚLTIMA OPORTUNIDAD POR $ 12
         </button>
 
         <button
