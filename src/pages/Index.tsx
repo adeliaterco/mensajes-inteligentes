@@ -51,7 +51,7 @@ const Index = () => {
       <section className="px-4 pt-10 md:pt-16 pb-12 max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/40 mb-6 fade-in-up">
           <Lock className="w-4 h-4 text-gold" />
-          <span className="text-sm text-gold font-semibold uppercase tracking-wider">Oferta única — solo ahora</span>
+          <span className="text-sm text-gold font-semibold uppercase tracking-wider">NO CIERRES NI SALGAS DE ESTA PÁGINA</span>
         </div>
 
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-gold leading-[1.05] mb-6 fade-in-up">
