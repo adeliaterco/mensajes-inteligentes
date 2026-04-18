@@ -10,13 +10,13 @@ export const StickyCTA = () => {
       <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
         <div className="hidden sm:flex flex-col">
           <CountdownTimer variant="compact" />
-          <span className="text-xs text-muted-foreground">Precio sube a R$ 97</span>
+          <span className="text-xs text-muted-foreground">Precio sube a $ 97</span>
         </div>
         <button
           onClick={handleClick}
           className="flex-1 sm:flex-initial gradient-gold text-primary-foreground font-bold text-base md:text-lg px-6 py-4 rounded-xl shadow-gold bounce-cta hover:scale-[1.02] active:scale-[0.98] transition-transform"
         >
-          ¡SÍ! QUIERO EL PROTOCOLO POR R$ 17
+          ¡SÍ! QUIERO EL PROTOCOLO POR $ 17
         </button>
       </div>
     </div>
