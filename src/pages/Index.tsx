@@ -67,7 +67,6 @@ const Index = () => {
           <span className="text-warning font-bold"> 30 minutos </span> para asegurar tu acceso.
         </p>
 
-        <CountdownTimer />
       </section>
 
       {/* SECCIÓN 2 — VIDEO */}
