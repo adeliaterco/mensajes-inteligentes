@@ -101,7 +101,7 @@ const Index = () => {
 
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed fade-in-up">
           El próximo mensaje puede cambiarlo todo, para bien o para mal. No dejes que la confusión te paralice. Tienes solo
-          <span className="text-warning font-bold"> 30 minutos </span> para asegurar tu acceso.
+          <span className="text-warning font-bold"> 10 minutos </span> para asegurar tu acceso.
         </p>
 
       </section>
@@ -240,7 +240,7 @@ const Index = () => {
         </div>
 
         <p className="text-center text-xl md:text-2xl font-bold text-foreground mt-10">
-          Esta oferta exclusiva es válida por <span className="text-warning">30 MINUTOS</span>
+          Esta oferta exclusiva es válida por <span className="text-warning">10 MINUTOS</span>
         </p>
         <p className="text-center text-warning mt-2">Después de ese período, el precio vuelve a $ 97</p>
         <p className="text-center text-foreground mt-4 text-lg">
