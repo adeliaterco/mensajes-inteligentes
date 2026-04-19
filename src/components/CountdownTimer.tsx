@@ -7,7 +7,7 @@ interface CountdownTimerProps {
 
 const STORAGE_KEY = "upsell_deadline_v1";
 
-export const CountdownTimer = ({ minutes = 30, variant = "hero" }: CountdownTimerProps) => {
+export const CountdownTimer = ({ minutes = 10, variant = "hero" }: CountdownTimerProps) => {
   const [timeLeft, setTimeLeft] = useState(minutes * 60);
 
   useEffect(() => {

@@ -96,7 +96,7 @@ const Index = () => {
         </h1>
 
         <p className="text-xl md:text-3xl text-foreground font-semibold mb-5 fade-in-up">
-          Ahora, 30 Minutos para Tener las <span className="text-gold">Palabras Exactas</span> y Recuperarla
+          Ahora, 10 Minutos para Tener las <span className="text-gold">Palabras Exactas</span> y Recuperarla
         </p>
 
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed fade-in-up">
@@ -369,7 +369,7 @@ const Index = () => {
       <section className="px-4 py-16 max-w-3xl mx-auto text-center">
         <Clock className="w-12 h-12 text-warning mx-auto mb-4 animate-pulse" />
         <h2 className="font-display text-3xl md:text-5xl font-black text-warning leading-tight mb-4">
-          Solo 30 Minutos para Asegurar Tu Acceso
+          Solo 10 Minutos para Asegurar Tu Acceso
         </h2>
         <p className="text-foreground text-lg md:text-xl mb-8">
           Después de ese período, el precio vuelve a <span className="text-warning font-bold">$ 97</span>
