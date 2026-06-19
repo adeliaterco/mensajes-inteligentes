@@ -90,7 +90,7 @@ export const ExitIntentPopupMain = () => {
         <p className="text-muted-foreground text-sm md:text-base mb-6 leading-relaxed">
           Por eso voy a hacer algo que no hago para nadie: te dejo llevarte el
           Protocolo por <span className="line-through text-muted-foreground">$ 27</span>{" "}
-          <span className="text-gold font-black text-xl">solo $ 12</span>. Pero esta
+          <span className="text-gold font-black text-xl">solo $ 17</span>. Pero esta
           oferta desaparece si cierras esta página.
         </p>
 
@@ -98,7 +98,7 @@ export const ExitIntentPopupMain = () => {
           onClick={handleAccept}
           className="w-full gradient-gold text-primary-foreground font-black text-base md:text-xl px-6 py-5 rounded-xl shadow-gold hover:scale-[1.02] transition-transform bounce-cta mb-4"
         >
-          QUIERO MI DESCUENTO POR $ 12
+          QUIERO MI DESCUENTO POR $ 17
         </button>
 
         <button

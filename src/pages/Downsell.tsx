@@ -66,7 +66,7 @@ const Downsell = () => {
       {/* OFERTA DOWNSELL - SUBSTITUIÇÃO AQUI */}
       <section id="oferta-downsell" className="px-4 py-12 max-w-4xl mx-auto">
         <SectionTitle className="text-center mb-10">
-          Última Oferta: Solo $ 12
+          Última Oferta: Solo $ 17
         </SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
@@ -85,7 +85,7 @@ const Downsell = () => {
               Última chance
             </span>
             <p className="text-sm uppercase tracking-wider text-primary-foreground/80 mb-2">Hoy pagas solo</p>
-            <p className="text-6xl font-black text-primary-foreground">$ 12</p>
+            <p className="text-6xl font-black text-primary-foreground">$ 17</p>
             <p className="text-xs text-primary-foreground/80 mt-2">Oferta exclusiva e irrepetible</p>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Downsell = () => {
       {/* QUE INCLUYE - MANTER IDÊNTICO */}
       <section className="px-4 py-12 max-w-4xl mx-auto">
         <SectionTitle className="text-center mb-10">
-          Todo Esto Por $ 12
+          Todo Esto Por $ 17
         </SectionTitle>
 
         <div className="bg-card border-2 border-gold/40 rounded-2xl p-6 md:p-10 shadow-gold">
@@ -156,7 +156,7 @@ const Downsell = () => {
           onClick={scrollToOferta}
           className="w-full gradient-gold text-primary-foreground font-black text-lg md:text-2xl px-8 py-6 rounded-2xl shadow-gold hover:scale-[1.02] transition-transform bounce-cta"
         >
-          ¡SÍ! QUIERO EL PROTOCOLO POR SOLO $ 12
+          ¡SÍ! QUIERO EL PROTOCOLO POR SOLO $ 17
         </button>
         <p className="text-muted-foreground text-sm mt-4">
           Compra 100% segura · Acceso inmediato · 30 días de garantía
