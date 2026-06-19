@@ -89,7 +89,7 @@ export const ExitIntentPopupMain = () => {
         </p>
         <p className="text-muted-foreground text-sm md:text-base mb-6 leading-relaxed">
           Por eso voy a hacer algo que no hago para nadie: te dejo llevarte el
-          Protocolo por <span className="line-through text-muted-foreground">$ 17</span>{" "}
+          Protocolo por <span className="line-through text-muted-foreground">$ 27</span>{" "}
           <span className="text-gold font-black text-xl">solo $ 12</span>. Pero esta
           oferta desaparece si cierras esta página.
         </p>

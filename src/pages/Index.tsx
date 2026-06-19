@@ -219,7 +219,7 @@ const Index = () => {
       {/* SECCIÓN 6 — OFERTA + PRECIO */}
       <section id="oferta" className="px-4 py-16 max-w-4xl mx-auto">
         <SectionTitle className="text-center mb-10">
-          Tu Inversión Hoy: Solo $ 17
+          Tu Inversión Hoy: Solo $ 27
         </SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
@@ -234,7 +234,7 @@ const Index = () => {
               Exclusivo
             </span>
             <p className="text-sm uppercase tracking-wider text-primary-foreground/80 mb-2">Precio exclusivo</p>
-            <p className="text-6xl font-black text-primary-foreground">$ 17</p>
+            <p className="text-6xl font-black text-primary-foreground">$ 27</p>
             <p className="text-xs text-primary-foreground/80 mt-2">Solo para quien adquirió el método principal</p>
           </div>
         </div>
@@ -244,7 +244,7 @@ const Index = () => {
         </p>
         <p className="text-center text-warning mt-2">Después de ese período, el precio vuelve a $ 97</p>
         <p className="text-center text-foreground mt-4 text-lg">
-          Tú eliges: ¿Invertir <span className="text-gold font-bold">$ 17 ahora</span> o <span className="text-warning font-bold">$ 97 después</span>?
+          Tú eliges: ¿Invertir <span className="text-gold font-bold">$ 27 ahora</span> o <span className="text-warning font-bold">$ 97 después</span>?
         </p>
 
         <div className="mt-8 flex justify-center">
@@ -326,7 +326,7 @@ const Index = () => {
             { q: "Mi caso es diferente, ¿funcionarán estos scripts?", a: "Sí. Los scripts están basados en psicología conductual y se adaptan a la mayoría de situaciones. Tendrás variaciones para cada escenario y aprenderás a personalizar el tono según el contexto." },
             { q: "Ya intenté de todo, ¿por qué esto sería diferente?", a: "Porque tendrás un protocolo, un mapa claro, no solo intentos aislados. La diferencia entre éxito y fracaso suele ser tener una estrategia probada en lugar de improvisar." },
             { q: "No quiero parecer manipulador.", a: "El objetivo no es manipular, sino comunicar tu valor de forma estratégica y auténtica. Los scripts te ayudan a expresar lo que ya sientes — pero de la manera correcta." },
-            { q: "¿Es muy caro solo por mensajes?", a: "Por $ 17, estás invirtiendo en claridad que puede costar tu reconquista si fallas. Una sola conversación bien conducida vale infinitamente más que el precio." },
+            { q: "¿Es muy caro solo por mensajes?", a: "Por $ 27, estás invirtiendo en claridad que puede costar tu reconquista si fallas. Una sola conversación bien conducida vale infinitamente más que el precio." },
             { q: "No tengo tiempo para aprender todo esto.", a: "Los scripts están listos para usar. Solo cópialos, personalízalos en segundos y envíalos. No requiere estudios largos." },
           ].map((item, i) => (
             <AccordionItem key={i} value={`q${i}`} className="bg-card border border-gold/30 rounded-xl px-5">
@@ -386,7 +386,7 @@ const Index = () => {
         </div>
 
         <p className="text-muted-foreground mt-8 text-base md:text-lg">
-          Tu decisión es clara: invierte <span className="text-gold font-bold">$ 17 ahora</span> o arrepiéntete después
+          Tu decisión es clara: invierte <span className="text-gold font-bold">$ 27 ahora</span> o arrepiéntete después
         </p>
 
         <div className="mt-8">
@@ -400,7 +400,7 @@ const Index = () => {
           onClick={scrollToOferta}
           className="w-full gradient-gold text-primary-foreground font-black text-lg md:text-2xl px-8 py-6 rounded-2xl shadow-gold hover:scale-[1.02] transition-transform bounce-cta"
         >
-          ¡SÍ! QUIERO EL PROTOCOLO POR SOLO $ 17
+          ¡SÍ! QUIERO EL PROTOCOLO POR SOLO $ 27
         </button>
         <p className="text-muted-foreground text-sm mt-4">
           Compra 100% segura · Acceso inmediato · 30 días de garantía
